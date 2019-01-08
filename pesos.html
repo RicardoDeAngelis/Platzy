@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <title>Tu peso en otro planeta</title>
+  <style type="TEXT/CSS">/*estilos css*/
+    body
+    {
+       background-color:#AAAAFF;
+      /*   color:white;*/
+        font-family:Helvetica;
+    }
+    strong
+    {
+        /*background-color:#FFAAAA;*/
+    }
+  </style>
+</head>
+<body>
+<h1>Pesos</h1>
+  <p><strong>hello word pich</strong> </p>
+  <p><strong>En la tierra pesas distinto que en marte o jupiter</strong> </p>
+  <script type="text/javascript" >
+    var usuario=prompt("cuanto pesas?");
+    var planeta=parseFloat(prompt("elige el planeta \n 1 es marte 2 es jupiter "));
+    var g_tierra=9.8;
+    var g_marte=3.7;
+    var g_jupiter=24.8;
+    var peso=parseFloat(usuario);
+    var peso_final;
+    var nombre;
+    if(planeta==1)
+    {
+    peso_final=(peso*g_marte)/g_tierra;
+    nombre="marte";
+/*
+    peso_final=peso_final.toFixed(2);
+
+    document.write("Hola uraaaa el peso marte es <strong>:"+ peso_final+ "</strong> kg");
+    alert("Hola uraaaa el peso en marte  es  :"+ peso_final + "kg");
+*/
+    }
+    else if (planeta==2)
+     {
+
+       peso_final=(peso*g_jupiter)/g_tierra;
+       nombre="jupiter";
+/*
+        peso_final=peso_final.toFixed(2);
+       document.write("Hola uraaaa el peso jupiter es <strong>:"+ peso_final+ "</strong> kg");
+       alert("Hola uraaaa el peso en jupiter  es  :"+ peso_final + "kg");
+*/
+    }
+    else
+    {
+
+      document.write("Hola uraaaa elegiste mal la opcion" );
+      alert("Hola uraaaa elegiste mal la opcion");
+     }
+     peso_final=peso_final.toFixed(2);
+    document.write("Hola uraaaa el peso en " + nombre + "es <strong>:"+ peso_final+ "</strong> kg");
+    alert("Hola uraaaa el peso en "+nombre+"  es  :"+ peso_final + "kg");
+
+  //  peso_final=parseInt(peso_final);
+
+
+  </script>
+
+
+</body>
+</html>
